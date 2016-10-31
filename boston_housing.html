@@ -13238,7 +13238,7 @@ LNvIBIYAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> max_depth = 1. Training and testing scores converge to a low-ish value of 0.4. Having more training points will not benefit the model as it is a high bias case. An increase in model complexity would be the best next step.</p>
+<p><strong>Answer: </strong> max_depth = 1. The training scores starts at 1 while testing score starts at 0, duo to beggining with only one training point. Training and testing scores then begging converging as more training points are aded. Training and testing scores converge to a low-ish value of 0.4. Having more training points will not benefit the model as it is a high bias case. An increase in model complexity would be the best next step.</p>
 
 </div>
 </div>
@@ -13756,7 +13756,7 @@ jeDM4Lj7DuAeYLWZvQusJjhdFQTPbh1oZtsIVr0zQ+uXAI9UOblFZ3VKVNG0RCJSKzMrcveEcMch
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> Initially is high bias, as the model's score is low for both training and validation. At max depth 10 the model suffers from high variance. The difference in scores for training and validation for the given max depth justify these conclusions.</p>
+<p><strong>Answer: </strong> Initially is high bias, as the model's score is low for both training and validation and not too far apart. This shows that the model is unable to capture the underlying structure of the data. At max depth 10 the model suffers from high variance, as the training score is high but there is a larga gap with the validation score. This suggests overfitting, failing to generalize to new data.</p>
 
 </div>
 </div>
